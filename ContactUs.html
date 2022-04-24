@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- The following lines are comments
+Auther : Joe Walsh S00222915
+DAte created : 21/02/2022
+Page Description : Home page of company sales web site-->
+
+<html> <lang="en"> <!-- Declare the primary language for each website-->
+<head>
+    <meta charset="utf-8" /> <!--8-bit character encoding capable of encoding all possible characters-->
+    <meta Name="description" content="Movie Website">
+    <meta Name="keywords" content="Movies, Movie Reviews, Movie Rating">
+    <meta Name="author" content="Joe Walsh">
+    <title>Cinema For You</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    </head>
+    <body> <!-- body tag start of body section display on screen -->
+        <header>
+            <img style ="float:left; margin-right:18px;" src="images/RevengeOfTheSith.jpg" alt="logo" width="275" height="500">
+            <img style ="float:none; margin-right:18px;" src="images/TheBatman.jpg" alt="logo" width="275" height="500">
+            <img style ="float:none; margin-right:18px;" src="images/ShawshankRedemption.jpg" alt="logo" width="275" height="500">
+            <img style ="float:none; margin-right:18px;" src="images/Nightcrawler.jpg" alt="logo" width="275" height="500">
+            <!--<img style ="float:none; margin-right:18px;" src="images/TheGentleman.jpg" alt="logo" width="275" height="500">-->
+            <img style ="float:right; margin-right:18px;" src="images/WolfOfWallStreet.jpg" alt="logo" width="275" height="500">
+            
+            <Nav>
+                <ul>
+                    <h1>Cinema For You</h1>
+                    <li> <a href="index.html"> Home</a></li>
+                    <li> <a href="movie.html"> Movies</a></li>
+                    <li> <a href="shows.html"> Shows</a></li>
+                    <li> <a href="toprated.html"> Only 10/10</a></li>
+                    <li id="active"> <a href="ContactUs.html"> Contact Us</a></li>
+                </ul>
+            </Nav>
+        </header>
+        <main> <!-- main wrapper tag that goes around your min content -->
+
+            <article> <!-- section grouping of content -->
+<style>
+label {
+    float: left;
+    width: 112px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+input {
+    margin-left: 1em;
+    margin-bottom: .5em;
+    width: 220px;
+}
+
+#button, #reset {
+    margin-top: .5em;
+    width: 12em;
+    border: 2px solid black;
+}
+</style>
+                <h2>Contact Us</h2>
+                
+                <p>To get in contact with us just fill out this short survey below, thank you.</p>
+
+                <h2>Survey</h2>
+                <form action="" method="get">
+                    <label for="first_name">First name: <span class="required">*</span></label>
+                    <input type="text" name="first_name" id="first_name" autofocus required><br>
+                    <label for="last_name">Last name: <span class="required">*</span></label>
+                    <input type="text" name="last_name" id="last_name" autofocus required><br>
+                    <label for="email">Email: <span class="required">*</span></label>
+                    <input type="email" name="email" id="email" required placeholder="test@example.com"><br>
+
+                <label for="message"> Query  :  </label>
+                <textarea cols="40" rows="6"
+                id="message" name="message" placeholder="Your message must be shorter than 200 characters" data-maxlength="200"></textarea><br>
+                <input type="submit" name="submit" id="button" value="Submit">
+                <input type="reset" name="reset" id="reset">
+                </form>
+            </article>
+
+        </main>
+        <footer> <!-- footer grouping of content for the bottom of the screen and will  need css to place at the bottom -->
+            <p>Copyright 2020 Cinema For You</p>
+        </footer>
+    </body>
+</html>
